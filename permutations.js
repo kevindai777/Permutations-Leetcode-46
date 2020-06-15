@@ -21,11 +21,11 @@ function helper(temp, nums, output) {
         //push in the value into the temp array
         temp.push(nums[i])
 
-        //remove the value from the given array
+        //remove the value from the given array and permute w/ new array
         nums.splice(i, 1)
         helper(temp, nums, output)
 
-        //Here, we pop in the next value of the given array to permute
+        //Once done, we put the value back into the array for later permutations
         nums.splice(i, 0, temp.pop())
     }
 }
