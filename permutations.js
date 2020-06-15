@@ -31,4 +31,4 @@ function helper(temp, nums, output) {
 }
 helper(temp, nums, output)
 
-console.log(output)
+return output
