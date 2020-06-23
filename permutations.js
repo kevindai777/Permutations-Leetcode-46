@@ -4,7 +4,7 @@
 let nums = [1,2,3]
 
 
-//O(O(∑ (k=1N) P(N,k)) where P(N, k) = {N!}/{(N - k)!} = N (N - 1) ... (N - k + 1)
+//O(∑(k=1->N) P(N,k)) where P(N, k) = N!/(N - k)! = N (N - 1) ... (N - k + 1)
 
 //Here we have a temp array to hold our different permutations from the given array
 //Once we exhaust the values from the given array, we push that permutation into the output array
